@@ -1,0 +1,132 @@
+{
+  "links": [
+    {
+      "id": "ca-1",
+      "title": "Canada Business Network",
+      "url": "https://canadabusiness.ca",
+      "description": "One-stop shop for government services, programs, and regulations for Canadian businesses.",
+      "category": "government",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "ca-2",
+      "title": "BDC – Business Development Bank",
+      "url": "https://www.bdc.ca",
+      "description": "Financing, advisory services, and capital for Canadian entrepreneurs at every stage.",
+      "category": "finance",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "ca-3",
+      "title": "CRA Small Business Resources",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses.html",
+      "description": "Everything you need for Canadian business taxes — GST/HST, payroll, T2 filing, and more.",
+      "category": "finance",
+      "createdAt": "2024-01-16"
+    },
+    {
+      "id": "ca-4",
+      "title": "CIPO – Trademarks & Patents",
+      "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en",
+      "description": "Register your trademark, patent, or copyright with the Canadian Intellectual Property Office.",
+      "category": "legal",
+      "createdAt": "2024-01-17"
+    },
+    {
+      "id": "ca-5",
+      "title": "Futurpreneur Canada",
+      "url": "https://www.futurpreneur.ca",
+      "description": "Financing, mentoring, and support for young Canadian entrepreneurs aged 18–39.",
+      "category": "networking",
+      "createdAt": "2024-01-18"
+    },
+    {
+      "id": "ca-6",
+      "title": "Canva",
+      "url": "https://www.canva.com",
+      "description": "Free graphic design tool for social media posts, flyers, logos, business cards, and more.",
+      "category": "tools",
+      "createdAt": "2024-01-19"
+    },
+    {
+      "id": "ca-7",
+      "title": "Mailchimp",
+      "url": "https://mailchimp.com",
+      "description": "Email marketing platform with a generous free tier — perfect for newsletters and promos.",
+      "category": "marketing",
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "ca-8",
+      "title": "Grants & Funding – Canada.ca",
+      "url": "https://www.canada.ca/en/services/business/grants.html",
+      "description": "Search for government grants, contributions, and financing programs for your business.",
+      "category": "government",
+      "createdAt": "2024-01-21"
+    },
+    {
+      "id": "ca-9",
+      "title": "Ontario Business Registry",
+      "url": "https://www.ontario.ca/page/ontario-business-registry",
+      "description": "Register or incorporate your business in Ontario. File annual returns and manage your company.",
+      "category": "legal",
+      "createdAt": "2024-01-22"
+    },
+    {
+      "id": "ca-10",
+      "title": "Startup Canada",
+      "url": "https://www.startupcan.ca",
+      "description": "Network, resources, and community for Canadian entrepreneurs building and scaling businesses.",
+      "category": "networking",
+      "createdAt": "2024-01-23"
+    },
+    {
+      "id": "ca-11",
+      "title": "Hootsuite",
+      "url": "https://www.hootsuite.com",
+      "description": "Social media management and scheduling — plan, create, and publish content across platforms.",
+      "category": "marketing",
+      "createdAt": "2024-01-24"
+    },
+    {
+      "id": "ca-12",
+      "title": "Wave Accounting",
+      "url": "https://www.waveapps.com",
+      "description": "Free accounting, invoicing, and receipt scanning software built for small businesses.",
+      "category": "tools",
+      "createdAt": "2024-01-25"
+    },
+    {
+      "id": "ca-13",
+      "title": "Small Business BC",
+      "url": "https://smallbusinessbc.ca",
+      "description": "Education, advisory services, and resources to help BC-based businesses thrive.",
+      "category": "education",
+      "createdAt": "2024-01-26"
+    },
+    {
+      "id": "ca-14",
+      "title": "Shopify (Free Trial)",
+      "url": "https://www.shopify.com",
+      "description": "Canadian-born e-commerce platform. Build your online store, sell anywhere.",
+      "category": "tools",
+      "createdAt": "2024-01-27"
+    },
+    {
+      "id": "ca-15",
+      "title": "Canadian Chamber of Commerce",
+      "url": "https://chamber.ca",
+      "description": "Advocacy, networking, and resources from Canada's largest business association.",
+      "category": "networking",
+      "createdAt": "2024-01-28"
+    },
+    {
+      "id": "ca-16",
+      "title": "Google My Business",
+      "url": "https://business.google.com",
+      "description": "Get your business on Google Search and Maps for free — essential for local visibility.",
+      "category": "marketing",
+      "createdAt": "2024-01-29"
+    }
+  ]
+}
