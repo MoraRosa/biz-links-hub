@@ -1,9 +1,11 @@
-import { useState, useMemo, useEffect } from "react";
-import { Search, LayoutGrid, List, Briefcase } from "lucide-react";
-import { fetchLinks, LinkItem, LinkCategory } from "@/lib/links";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { Search, LayoutGrid, List, Briefcase, Sparkles, ArrowDown } from "lucide-react";
+import { fetchLinks, LinkItem, LinkCategory, CATEGORY_META, ALL_CATEGORIES } from "@/lib/links";
 import { LinkCardGrid, LinkCardList } from "@/components/LinkCard";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { Link } from "react-router-dom";
+
+const HERO_CATEGORIES = ALL_CATEGORIES.slice(0, 6);
 
 const Index = () => {
   const [links, setLinks] = useState<LinkItem[]>([]);
@@ -11,6 +13,7 @@ const Index = () => {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<LinkCategory | "all">("all");
   const [view, setView] = useState<"grid" | "list">("grid");
+  const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     fetchLinks().then((data) => {
@@ -43,11 +46,24 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-warm opacity-[0.07]" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-10 sm:pt-14 sm:pb-14">
-          <div className="flex items-center justify-between mb-6 sm:mb-8">
-            <div className="flex items-center gap-3">
+      <header className="relative overflow-hidden min-h-[70vh] sm:min-h-[60vh] flex flex-col">
+        {/* Animated background shapes */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary/[0.06] blur-3xl animate-hero-float" />
+          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-accent/[0.05] blur-3xl animate-hero-float-delayed" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.03] blur-3xl" />
+        </div>
+
+        {/* Decorative grid dots */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: 'radial-gradient(circle, hsl(var(--foreground)) 1px, transparent 1px)',
+          backgroundSize: '32px 32px',
+        }} />
+
+        <div className="relative flex-1 flex flex-col max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-8 sm:pt-10 w-full">
+          {/* Nav */}
+          <div className="flex items-center justify-between mb-auto">
+            <div className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: '0ms' }}>
               <div className="w-11 h-11 rounded-xl bg-gradient-warm flex items-center justify-center shadow-hero">
                 <Briefcase className="w-5 h-5 text-primary-foreground" />
               </div>
@@ -61,13 +77,55 @@ const Index = () => {
             </Link>
           </div>
 
-          <h1 className="font-display text-3xl sm:text-5xl font-normal text-foreground leading-tight mb-3">
-            Your go-to resources,{" "}
-            <span className="text-gradient-warm italic">all in one place.</span>
-          </h1>
-          <p className="text-base sm:text-lg text-muted-foreground font-body max-w-xl leading-relaxed">
-            A curated collection of tools, grants, guides, and connections for Canadian small business owners.
-          </p>
+          {/* Hero content - centered */}
+          <div className="flex-1 flex flex-col items-center justify-center text-center py-8 sm:py-12">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-body font-medium mb-5 animate-fade-up" style={{ animationDelay: '100ms' }}>
+              <Sparkles className="w-3 h-3" />
+              <span>Curated for Canadian entrepreneurs</span>
+            </div>
+
+            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-normal text-foreground leading-[1.1] mb-4 animate-fade-up" style={{ animationDelay: '200ms' }}>
+              Your go-to resources,
+              <br />
+              <span className="text-gradient-warm italic">all in one place.</span>
+            </h1>
+
+            <p className="text-base sm:text-lg text-muted-foreground font-body max-w-lg leading-relaxed mb-8 animate-fade-up" style={{ animationDelay: '300ms' }}>
+              Tools, grants, guides & connections — everything a small business owner needs, bookmarked and organized.
+            </p>
+
+            {/* Floating category pills */}
+            <div className="flex flex-wrap justify-center gap-2 mb-8 animate-fade-up" style={{ animationDelay: '400ms' }}>
+              {HERO_CATEGORIES.map((cat, i) => {
+                const meta = CATEGORY_META[cat];
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => {
+                      setCategory(cat);
+                      mainRef.current?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-card/80 backdrop-blur-sm text-xs font-body text-muted-foreground hover:border-primary/30 hover:text-primary hover:bg-primary/5 transition-all duration-200 hover:-translate-y-0.5"
+                    style={{ animationDelay: `${450 + i * 50}ms` }}
+                  >
+                    <img src={meta.image} alt="" className="w-4 h-4 rounded-sm object-contain" />
+                    {meta.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Scroll hint */}
+          <div className="flex justify-center animate-fade-up" style={{ animationDelay: '600ms' }}>
+            <button
+              onClick={() => mainRef.current?.scrollIntoView({ behavior: 'smooth' })}
+              className="flex flex-col items-center gap-1 text-muted-foreground/40 hover:text-muted-foreground transition-colors"
+            >
+              <span className="text-[10px] font-body uppercase tracking-widest">Explore</span>
+              <ArrowDown className="w-4 h-4 animate-bounce" />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -115,7 +173,7 @@ const Index = () => {
       </div>
 
       {/* Content */}
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+      <main ref={mainRef} className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {loading ? (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 6 }).map((_, i) => (
