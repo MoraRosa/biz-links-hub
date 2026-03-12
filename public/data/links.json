@@ -127,6 +127,238 @@
       "description": "Get your business on Google Search and Maps for free — essential for local visibility.",
       "category": "marketing",
       "createdAt": "2024-01-29"
+    },
+    {
+      "id": "ca-17",
+      "title": "BC Registry Services",
+      "url": "https://www.bcregistry.gov.bc.ca",
+      "description": "Register, incorporate, or manage your business in British Columbia online.",
+      "category": "legal",
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "ca-18",
+      "title": "Alberta Business Registrations",
+      "url": "https://www.alberta.ca/register-business.aspx",
+      "description": "Register a sole proprietorship, partnership, or corporation in Alberta.",
+      "category": "legal",
+      "createdAt": "2024-02-02"
+    },
+    {
+      "id": "ca-19",
+      "title": "Registraire des entreprises (Québec)",
+      "url": "https://www.registreentreprises.gouv.qc.ca",
+      "description": "Register and manage your business in Québec. French and English services available.",
+      "category": "legal",
+      "createdAt": "2024-02-03"
+    },
+    {
+      "id": "ca-20",
+      "title": "Innovate BC",
+      "url": "https://www.innovatebc.ca",
+      "description": "Programs, funding, and resources to support BC tech and innovation companies.",
+      "category": "government",
+      "createdAt": "2024-02-04"
+    },
+    {
+      "id": "ca-21",
+      "title": "CanExport – Trade Commissioner",
+      "url": "https://www.tradecommissioner.gc.ca/canexport",
+      "description": "Federal funding to help small businesses expand into international markets.",
+      "category": "government",
+      "createdAt": "2024-02-05"
+    },
+    {
+      "id": "ca-22",
+      "title": "IRAP – NRC Industrial Research",
+      "url": "https://nrc.canada.ca/en/support-technology-innovation",
+      "description": "Advisory and funding support for Canadian SMEs pursuing technology-driven innovation.",
+      "category": "government",
+      "createdAt": "2024-02-06"
+    },
+    {
+      "id": "ca-23",
+      "title": "SR&ED Tax Credits",
+      "url": "https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html",
+      "description": "Claim tax incentives for R&D activities — one of Canada's largest business support programs.",
+      "category": "finance",
+      "createdAt": "2024-02-07"
+    },
+    {
+      "id": "ca-24",
+      "title": "FreshBooks",
+      "url": "https://www.freshbooks.com",
+      "description": "Canadian-made invoicing and accounting software designed for self-employed and small teams.",
+      "category": "tools",
+      "createdAt": "2024-02-08"
+    },
+    {
+      "id": "ca-25",
+      "title": "Square Canada",
+      "url": "https://squareup.com/ca",
+      "description": "Free POS system, payment processing, and online store — no monthly fees.",
+      "category": "tools",
+      "createdAt": "2024-02-09"
+    },
+    {
+      "id": "ca-26",
+      "title": "Notion",
+      "url": "https://www.notion.so",
+      "description": "All-in-one workspace for notes, docs, project management, and wikis. Free for personal use.",
+      "category": "tools",
+      "createdAt": "2024-02-10"
+    },
+    {
+      "id": "ca-27",
+      "title": "BNI Canada",
+      "url": "https://bfranchise.bni.com/en-CA",
+      "description": "Business networking chapters across Canada — structured referral groups for entrepreneurs.",
+      "category": "networking",
+      "createdAt": "2024-02-11"
+    },
+    {
+      "id": "ca-28",
+      "title": "MaRS Discovery District",
+      "url": "https://www.marsdd.com",
+      "description": "Toronto-based innovation hub offering mentorship, workspace, and funding connections.",
+      "category": "networking",
+      "createdAt": "2024-02-12"
+    },
+    {
+      "id": "ca-29",
+      "title": "Communitech (Waterloo Region)",
+      "url": "https://www.communitech.ca",
+      "description": "Tech hub supporting founders with programs, talent connections, and peer networks.",
+      "category": "networking",
+      "createdAt": "2024-02-13"
+    },
+    {
+      "id": "ca-30",
+      "title": "District Ventures (Calgary)",
+      "url": "https://www.districtventures.ca",
+      "description": "Accelerator and investment platform focused on food, health, and consumer products.",
+      "category": "networking",
+      "createdAt": "2024-02-14"
+    },
+    {
+      "id": "ca-31",
+      "title": "Buffer",
+      "url": "https://buffer.com",
+      "description": "Social media scheduling and analytics with a solid free plan for small businesses.",
+      "category": "marketing",
+      "createdAt": "2024-02-15"
+    },
+    {
+      "id": "ca-32",
+      "title": "Google Analytics",
+      "url": "https://analytics.google.com",
+      "description": "Free website analytics — understand your traffic, audience, and conversions.",
+      "category": "marketing",
+      "createdAt": "2024-02-16"
+    },
+    {
+      "id": "ca-33",
+      "title": "Moz Beginner's Guide to SEO",
+      "url": "https://moz.com/beginners-guide-to-seo",
+      "description": "Comprehensive free guide to search engine optimization for your business website.",
+      "category": "education",
+      "createdAt": "2024-02-17"
+    },
+    {
+      "id": "ca-34",
+      "title": "Coursera – Business Courses",
+      "url": "https://www.coursera.org/browse/business",
+      "description": "Free and paid courses on entrepreneurship, marketing, finance, and leadership.",
+      "category": "education",
+      "createdAt": "2024-02-18"
+    },
+    {
+      "id": "ca-35",
+      "title": "Digital Main Street",
+      "url": "https://digitalmainstreet.ca",
+      "description": "Free digital transformation programs and grants for Canadian small businesses.",
+      "category": "education",
+      "createdAt": "2024-02-19"
+    },
+    {
+      "id": "ca-36",
+      "title": "Canada Small Business Financing Program",
+      "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+      "description": "Government-backed loans up to $1M for equipment, leasehold improvements, and real property.",
+      "category": "finance",
+      "createdAt": "2024-02-20"
+    },
+    {
+      "id": "ca-37",
+      "title": "Wealthsimple Tax",
+      "url": "https://www.wealthsimple.com/en-ca/tax",
+      "description": "Free Canadian tax filing software — great for self-employed and sole proprietors.",
+      "category": "finance",
+      "createdAt": "2024-02-21"
+    },
+    {
+      "id": "ca-38",
+      "title": "Meetup – Business Groups",
+      "url": "https://www.meetup.com/find/?keywords=business&source=GROUPS",
+      "description": "Find local entrepreneur and small business meetup groups in your city.",
+      "category": "networking",
+      "createdAt": "2024-02-22"
+    },
+    {
+      "id": "ca-39",
+      "title": "Women's Enterprise Centre",
+      "url": "https://www.wec.ca",
+      "description": "Loans, mentoring, and resources for women entrepreneurs in Western Canada.",
+      "category": "other",
+      "createdAt": "2024-02-23"
+    },
+    {
+      "id": "ca-40",
+      "title": "Indigenous Business Development",
+      "url": "https://www.canada.ca/en/services/indigenous-peoples/business.html",
+      "description": "Federal programs and resources supporting Indigenous entrepreneurs and businesses.",
+      "category": "other",
+      "createdAt": "2024-02-24"
+    },
+    {
+      "id": "ca-41",
+      "title": "Canada Job Grant",
+      "url": "https://www.canada.ca/en/employment-social-development/programs/job-grant.html",
+      "description": "Government funding to help train your employees — covers up to 2/3 of training costs.",
+      "category": "government",
+      "createdAt": "2024-02-25"
+    },
+    {
+      "id": "ca-42",
+      "title": "BDC Learning Centre",
+      "url": "https://www.bdc.ca/en/articles-tools",
+      "description": "Free articles, templates, and tools on business planning, HR, marketing, and finance.",
+      "category": "education",
+      "createdAt": "2024-02-26"
+    },
+    {
+      "id": "ca-43",
+      "title": "LegalZoom Canada (via Ownr)",
+      "url": "https://www.ownr.co",
+      "description": "Incorporate your business online in minutes. Canadian-focused legal formation service.",
+      "category": "legal",
+      "createdAt": "2024-02-27"
+    },
+    {
+      "id": "ca-44",
+      "title": "Unsplash",
+      "url": "https://unsplash.com",
+      "description": "Beautiful, free stock photos for your website, social media, and marketing materials.",
+      "category": "tools",
+      "createdAt": "2024-02-28"
+    },
+    {
+      "id": "ca-45",
+      "title": "Calendly",
+      "url": "https://calendly.com",
+      "description": "Free scheduling tool — let clients book meetings without the back-and-forth emails.",
+      "category": "tools",
+      "createdAt": "2024-03-01"
     }
   ]
 }
