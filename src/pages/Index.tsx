@@ -1,9 +1,11 @@
-import { useState, useMemo, useEffect } from "react";
-import { Search, LayoutGrid, List, Briefcase } from "lucide-react";
-import { fetchLinks, LinkItem, LinkCategory } from "@/lib/links";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { Search, LayoutGrid, List, Briefcase, Sparkles, ArrowDown } from "lucide-react";
+import { fetchLinks, LinkItem, LinkCategory, CATEGORY_META, ALL_CATEGORIES } from "@/lib/links";
 import { LinkCardGrid, LinkCardList } from "@/components/LinkCard";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { Link } from "react-router-dom";
+
+const HERO_CATEGORIES = ALL_CATEGORIES.slice(0, 6);
 
 const Index = () => {
   const [links, setLinks] = useState<LinkItem[]>([]);
@@ -11,6 +13,7 @@ const Index = () => {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<LinkCategory | "all">("all");
   const [view, setView] = useState<"grid" | "list">("grid");
+  const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     fetchLinks().then((data) => {
