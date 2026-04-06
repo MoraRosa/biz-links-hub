@@ -64,9 +64,7 @@ const Index = () => {
           {/* Nav */}
           <div className="flex items-center justify-between mb-auto">
             <div className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: '0ms' }}>
-              <div className="w-11 h-11 rounded-xl bg-gradient-warm flex items-center justify-center shadow-hero">
-                <Briefcase className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img src="/icons/icon-192.png" alt="Biz Toolkit" className="w-11 h-11 rounded-xl shadow-hero" />
               <span className="font-display text-lg text-foreground">Biz Toolkit</span>
             </div>
             <Link
