@@ -375,6 +375,30 @@
       "description": "Non-dilutive grants and free coaching for Alberta startups and SMEs — from micro-vouchers up to $10K to commercialization funding up to $100K, plus Technology Development Advisors.",
       "category": "government",
       "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-48",
+      "title": "Nielsen Norman Group (NN/g)",
+      "url": "https://www.nngroup.com/articles/",
+      "description": "Free, evidence-based UX articles and reports — practical guidance to make your website and marketing emails easier for customers to use.",
+      "category": "education",
+      "createdAt": "2026-09-25"
+    },
+    {
+      "id": "ca-49",
+      "title": "Interaction Design Foundation",
+      "url": "https://ixdf.org",
+      "description": "Design and UX courses taught by industry leaders, with certificates and local chapters worldwide — a flat-rate membership instead of per-course fees.",
+      "category": "education",
+      "createdAt": "2026-09-25"
+    },
+    {
+      "id": "ca-50",
+      "title": "Peak Enterprise",
+      "url": "https://peakenterprise.ca",
+      "description": "Canadian-built storefront and operations platform for consumer-product brands — inventory, orders, and customer history in one place, with a free tier and no cut of your sales.",
+      "category": "tools",
+      "createdAt": "2026-09-25"
     }
   ]
 }
