@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { Search, LayoutGrid, List, Briefcase, Sparkles, ArrowDown } from "lucide-react";
-import { fetchLinks, LinkItem, LinkCategory, CATEGORY_META, ALL_CATEGORIES } from "@/lib/links";
+import { fetchLinks, LinkItem, LinkCategory, CATEGORY_META, ALL_CATEGORIES, linkCategories } from "@/lib/links";
 import { LinkCardGrid, LinkCardList } from "@/components/LinkCard";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { Link } from "react-router-dom";

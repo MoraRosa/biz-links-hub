@@ -50,6 +50,7 @@ export default function Admin() {
   const [url, setUrl] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState<LinkCategory>("tools");
+  const [tags, setTags] = useState<LinkCategory[]>([]);
 
   useEffect(() => {
     const local = getLocalEdits();
@@ -86,6 +87,7 @@ export default function Admin() {
     setUrl("");
     setDescription("");
     setCategory("tools");
+    setTags([]);
     setDialogOpen(true);
   };
 
@@ -95,6 +97,7 @@ export default function Admin() {
     setUrl(link.url);
     setDescription(link.description);
     setCategory(link.category);
+    setTags(link.tags ?? []);
     setDialogOpen(true);
   };
 
@@ -104,7 +107,7 @@ export default function Admin() {
     if (editing) {
       updated = links.map((l) =>
         l.id === editing.id
-          ? { ...l, title: title.trim(), url: url.trim(), description: description.trim(), category }
+          ? { ...l, title: title.trim(), url: url.trim(), description: description.trim(), category, tags: tags.filter((t) => t !== category) }
           : l
       );
     } else {
@@ -114,6 +117,7 @@ export default function Admin() {
         url: url.trim(),
         description: description.trim(),
         category,
+        tags: tags.filter((t) => t !== category),
         createdAt: new Date().toISOString(),
       };
       updated = [newLink, ...links];
@@ -310,6 +314,24 @@ export default function Admin() {
                   })}
                 </SelectContent>
               </Select>
+            </div>
+            <div>
+              <label className="text-sm font-medium text-foreground font-body block mb-1.5">Also fits in (optional)</label>
+              <div className="flex flex-wrap gap-1.5">
+                {ALL_CATEGORIES.filter((k) => k !== category).map((key) => {
+                  const on = tags.includes(key);
+                  return (
+                    <button
+                      type="button"
+                      key={key}
+                      onClick={() => setTags(on ? tags.filter((t) => t !== key) : [...tags, key])}
+                      className={`text-xs font-body px-2.5 py-1 rounded-full border transition-colors ${on ? "bg-primary text-primary-foreground border-primary" : "border-border text-muted-foreground hover:border-primary/40"}`}
+                    >
+                      {CATEGORY_META[key].emoji} {CATEGORY_META[key].label}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
             <Button onClick={handleSave} className="w-full" disabled={!title.trim() || !url.trim()}>
               {editing ? "Save Changes" : "Add Resource"}
