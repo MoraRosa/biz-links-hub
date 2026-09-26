@@ -37,7 +37,7 @@
       "title": "Futurpreneur Canada",
       "url": "https://www.futurpreneur.ca",
       "description": "Financing, mentoring, and support for young Canadian entrepreneurs aged 18–39.",
-      "category": "networking",
+      "category": "finance",
       "createdAt": "2024-01-18"
     },
     {
@@ -309,7 +309,7 @@
       "title": "Women's Enterprise Centre",
       "url": "https://www.wec.ca",
       "description": "Loans, mentoring, and resources for women entrepreneurs in Western Canada.",
-      "category": "other",
+      "category": "finance",
       "createdAt": "2024-02-23"
     },
     {
@@ -317,7 +317,7 @@
       "title": "Indigenous Business Development",
       "url": "https://www.canada.ca/en/services/indigenous-peoples/business.html",
       "description": "Federal programs and resources supporting Indigenous entrepreneurs and businesses.",
-      "category": "other",
+      "category": "government",
       "createdAt": "2024-02-24"
     },
     {
