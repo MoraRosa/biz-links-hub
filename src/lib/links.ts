@@ -23,6 +23,8 @@ export interface LinkItem {
   url: string;
   description: string;
   category: LinkCategory;
+  /** Extra categories this link also belongs to */
+  tags?: LinkCategory[];
   createdAt: string;
 }
 
@@ -39,6 +41,8 @@ export const CATEGORY_META: Record<
   education: { label: "Learning", emoji: "📚", image: catEducation },
   other: { label: "Other", emoji: "📌", image: catOther },
 };
+
+export const linkCategories = (l: LinkItem): LinkCategory[] => [l.category, ...(l.tags ?? []).filter((t) => t !== l.category)];
 
 export const ALL_CATEGORIES = Object.keys(CATEGORY_META) as LinkCategory[];
 
