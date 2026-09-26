@@ -359,6 +359,22 @@
       "description": "Free scheduling tool — let clients book meetings without the back-and-forth emails.",
       "category": "tools",
       "createdAt": "2024-03-01"
+    },
+    {
+      "id": "ca-46",
+      "title": "Platform Calgary",
+      "url": "https://www.platformcalgary.com",
+      "description": "Calgary's home for innovators — free pre-accelerator and incubator programs, the Platform Innovation Centre, and connections to 120+ ecosystem partners for tech founders.",
+      "category": "networking",
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-47",
+      "title": "Alberta Innovates",
+      "url": "https://albertainnovates.ca",
+      "description": "Non-dilutive grants and free coaching for Alberta startups and SMEs — from micro-vouchers up to $10K to commercialization funding up to $100K, plus Technology Development Advisors.",
+      "category": "government",
+      "createdAt": "2026-09-26"
     }
   ]
 }
