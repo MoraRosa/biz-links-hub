@@ -38,7 +38,10 @@
       "url": "https://www.futurpreneur.ca",
       "description": "Financing, mentoring, and support for young Canadian entrepreneurs aged 18–39.",
       "category": "finance",
-      "createdAt": "2024-01-18"
+      "createdAt": "2024-01-18",
+      "tags": [
+        "networking"
+      ]
     },
     {
       "id": "ca-6",
@@ -371,10 +374,13 @@
     {
       "id": "ca-47",
       "title": "Alberta Innovates",
-      "url": "https://albertainnovates.ca",
+      "url": "https://albertainnovates.ca/funding/",
       "description": "Non-dilutive grants and free coaching for Alberta startups and SMEs — from micro-vouchers up to $10K to commercialization funding up to $100K, plus Technology Development Advisors.",
       "category": "government",
-      "createdAt": "2026-09-26"
+      "createdAt": "2026-09-26",
+      "tags": [
+        "finance"
+      ]
     },
     {
       "id": "ca-48",
@@ -399,6 +405,97 @@
       "description": "Canadian-built storefront and operations platform for consumer-product brands — inventory, orders, and customer history in one place, with a free tier and no cut of your sales.",
       "category": "tools",
       "createdAt": "2026-09-25"
+    },
+    {
+      "id": "ca-51",
+      "title": "Business Benefits Finder",
+      "url": "https://innovation.ised-isde.canada.ca/s/?language=en_CA",
+      "description": "Federal search tool: answer a few questions about your business and get a matched list of grants, loans, tax credits, and advisory programs from every level of government.",
+      "category": "government",
+      "tags": [
+        "finance"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-52",
+      "title": "helloDarwin",
+      "url": "https://hellodarwin.com",
+      "description": "Canadian grant-finding platform that matches your projects (digital, export, hiring, green, R&D) to government funding and can help write the applications.",
+      "category": "finance",
+      "tags": [
+        "government",
+        "tools"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-53",
+      "title": "Accelerate Fund",
+      "url": "https://acceleratefund.ca",
+      "description": "Early-stage co-investor for Alberta-based B2B tech startups (life sciences, digital, AI) — capital plus mentoring from the investment team.",
+      "category": "finance",
+      "tags": [
+        "networking"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-54",
+      "title": "BizPaL – Permits & Licences",
+      "url": "https://services.bizpal-perle.ca/?lang=en",
+      "description": "Pick your location and industry to see every federal, provincial, and municipal permit or licence your business may need.",
+      "category": "legal",
+      "tags": [
+        "government"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-55",
+      "title": "CanadaBuys",
+      "url": "https://canadabuys.canada.ca/en",
+      "description": "Sell to the Government of Canada — search open tenders, get bid notifications, and register as a supplier.",
+      "category": "government",
+      "tags": [
+        "marketing"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-56",
+      "title": "Futurpreneur – Black Entrepreneur Startup Program",
+      "url": "https://futurpreneur.ca/en/offering/black-entrepreneur-startup/",
+      "description": "Equity-free startup loans (with BDC co-financing) plus two years of mentoring for young Black entrepreneurs aged 18–39, funded by RBC.",
+      "category": "finance",
+      "tags": [
+        "networking"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-57",
+      "title": "YSpace ELLA – Women Entrepreneurs",
+      "url": "https://www.yorku.ca/yspace/programs-streams/ella/",
+      "description": "York University's programs for women-led businesses, including ELLA Express: a flexible 3-month online course on marketing foundations and customer strategy.",
+      "category": "education",
+      "tags": [
+        "marketing",
+        "networking"
+      ],
+      "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-58",
+      "title": "PARO Centre for Women's Enterprise",
+      "url": "https://paro.ca",
+      "description": "Supports women entrepreneurs with BizCamps workshops, peer lending circles, trade missions, and a B2B supplier database.",
+      "category": "networking",
+      "tags": [
+        "finance",
+        "education"
+      ],
+      "createdAt": "2026-09-26"
     }
   ]
 }

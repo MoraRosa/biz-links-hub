@@ -25,20 +25,20 @@ const Index = () => {
   const counts = useMemo(() => {
     const c: Record<string, number> = { all: links.length };
     links.forEach((l) => {
-      c[l.category] = (c[l.category] || 0) + 1;
+      linkCategories(l).forEach((k) => (c[k] = (c[k] || 0) + 1));
     });
     return c;
   }, [links]);
 
   const filtered = useMemo(() => {
     return links.filter((l) => {
-      const matchCat = category === "all" || l.category === category;
+      const matchCat = category === "all" || linkCategories(l).includes(category);
       const q = search.toLowerCase();
       const matchSearch =
         !q ||
         l.title.toLowerCase().includes(q) ||
         l.description.toLowerCase().includes(q) ||
-        l.category.includes(q);
+        linkCategories(l).some((k) => CATEGORY_META[k].label.toLowerCase().includes(q));
       return matchCat && matchSearch;
     });
   }, [links, category, search]);
