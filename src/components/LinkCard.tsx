@@ -4,10 +4,11 @@ import { LinkItem, CATEGORY_META } from "@/lib/links";
 interface LinkCardGridProps {
   link: LinkItem;
   index: number;
+  displayCategory?: LinkItem["category"];
 }
 
-export function LinkCardGrid({ link, index }: LinkCardGridProps) {
-  const meta = CATEGORY_META[link.category];
+export function LinkCardGrid({ link, index, displayCategory }: LinkCardGridProps) {
+  const meta = CATEGORY_META[displayCategory ?? link.category];
 
   return (
     <a

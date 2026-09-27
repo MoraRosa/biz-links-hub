@@ -1,8 +1,10 @@
 import { useState, useMemo, useEffect, useRef } from "react";
-import { Search, LayoutGrid, List, Briefcase, Sparkles, ArrowDown } from "lucide-react";
+import { Search, LayoutGrid, List, Rows3, Sparkles, ArrowDown } from "lucide-react";
 import { fetchLinks, LinkItem, LinkCategory, CATEGORY_META, ALL_CATEGORIES, linkCategories } from "@/lib/links";
 import { LinkCardGrid, LinkCardList } from "@/components/LinkCard";
 import { CategoryFilter } from "@/components/CategoryFilter";
+import { CategoryShelves } from "@/components/CategoryShelves";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const HERO_CATEGORIES = ALL_CATEGORIES.slice(0, 6);
@@ -12,7 +14,7 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<LinkCategory | "all">("all");
-  const [view, setView] = useState<"grid" | "list">("grid");
+  const [view, setView] = useState<"grid" | "list" | "categories">("grid");
   const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -64,7 +66,7 @@ const Index = () => {
           {/* Nav */}
           <div className="flex items-center justify-between mb-auto">
             <div className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: '0ms' }}>
-              <img src="/icons/icon-192.png" alt="Biz Toolkit" className="w-11 h-11 rounded-xl shadow-hero" />
+              <img src={`${import.meta.env.BASE_URL}icons/icon-192.png`} alt="Biz Toolkit" className="w-11 h-11 rounded-xl shadow-hero" />
               <span className="font-display text-lg text-foreground">Biz Toolkit</span>
             </div>
             <Link
@@ -142,36 +144,60 @@ const Index = () => {
             />
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between gap-2 min-w-0">
             <CategoryFilter selected={category} onSelect={setCategory} counts={counts} />
 
             {/* View toggle */}
-            <div className="flex items-center rounded-lg border border-border bg-card overflow-hidden">
-              <button
+            <div className="flex items-center shrink-0 rounded-lg border border-border bg-card overflow-hidden" role="group" aria-label="Display view">
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
                 onClick={() => setView("grid")}
-                className={`p-2 transition-colors ${
+                className={`h-9 w-9 rounded-none transition-colors ${
                   view === "grid" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
                 aria-label="Grid view"
+                aria-pressed={view === "grid"}
+                title="Grid view"
               >
                 <LayoutGrid className="w-4 h-4" />
-              </button>
-              <button
+              </Button>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
                 onClick={() => setView("list")}
-                className={`p-2 transition-colors ${
+                className={`h-9 w-9 rounded-none transition-colors ${
                   view === "list" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
                 aria-label="List view"
+                aria-pressed={view === "list"}
+                title="List view"
               >
                 <List className="w-4 h-4" />
-              </button>
+              </Button>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => setView("categories")}
+                className={`h-9 w-9 rounded-none transition-colors ${
+                  view === "categories" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+                aria-label="Category view"
+                aria-pressed={view === "categories"}
+                title="Category view"
+              >
+                <Rows3 className="w-4 h-4" />
+              </Button>
             </div>
           </div>
         </div>
       </div>
 
       {/* Content */}
-      <main ref={mainRef} className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+      <main ref={mainRef} className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 scroll-mt-28 sm:scroll-mt-20">
         {loading ? (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 6 }).map((_, i) => (
@@ -182,7 +208,9 @@ const Index = () => {
             ))}
           </div>
         ) : filtered.length > 0 ? (
-          view === "grid" ? (
+          view === "categories" ? (
+            <CategoryShelves links={filtered} selected={category} />
+          ) : view === "grid" ? (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {filtered.map((link, i) => (
                 <LinkCardGrid key={link.id} link={link} index={i} />

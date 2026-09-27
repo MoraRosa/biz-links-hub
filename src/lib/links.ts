@@ -47,7 +47,8 @@ export const linkCategories = (l: LinkItem): LinkCategory[] => [l.category, ...(
 export const ALL_CATEGORIES = Object.keys(CATEGORY_META) as LinkCategory[];
 
 export async function fetchLinks(): Promise<LinkItem[]> {
-  const res = await fetch("/data/links.json");
+  const res = await fetch(`${import.meta.env.BASE_URL}data/links.json`);
+  if (!res.ok) throw new Error("Could not load resources");
   const data = await res.json();
   return data.links as LinkItem[];
 }
