@@ -53,7 +53,7 @@ function Shelf({ category, links }: { category: LinkCategory; links: LinkItem[] 
       }} className="flex gap-3 overflow-x-auto pb-3 snap-x snap-mandatory scroll-smooth overscroll-x-contain" tabIndex={0} aria-label={`${meta.label} resources`}>
         {links.map((link) => (
           <div key={link.id} className="w-[min(78vw,260px)] shrink-0 snap-start">
-            <LinkCardGrid link={link} index={0} />
+            <LinkCardGrid link={link} index={0} displayCategory={category} />
           </div>
         ))}
       </div>
