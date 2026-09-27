@@ -22,3 +22,15 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Publish on GitHub Pages
+
+1. Push this project to a GitHub repository on the `main` branch.
+2. In the repository's **Settings → Pages**, choose **GitHub Actions** as the build and deployment source.
+3. The included workflow deploys each push to `main`. Find the public URL in **Settings → Pages** after it finishes.
+
+The workflow automatically handles both `username.github.io` repositories and ordinary repositories at `username.github.io/repository-name/`. Internal pages use hash addresses (for example `/#/admin` or `/repository-name/#/admin`) on project sites so reloading works without a server rewrite.
+
+To update the shared directory, export JSON from the admin page, replace `public/data/links.json` with it, then commit and push. Admin edits stay on your device until you do this. **The admin password is only a convenience gate, not real security** on a public, static site; anyone can inspect the client-side code. Don't put private links or secrets in the JSON.
+
+The site has a home-screen icon and can be added to a phone's home screen on supported browsers after publishing over HTTPS. It does **not** work offline.

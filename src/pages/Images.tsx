@@ -1,7 +1,7 @@
 const icons = [
-  { label: "App Icon 512px", src: "/icons/icon-512.png" },
-  { label: "App Icon 192px", src: "/icons/icon-192.png" },
-  { label: "Favicon", src: "/favicon.png" },
+  { label: "App Icon 512px", src: `${import.meta.env.BASE_URL}icons/icon-512.png` },
+  { label: "App Icon 192px", src: `${import.meta.env.BASE_URL}icons/icon-192.png` },
+  { label: "Favicon", src: `${import.meta.env.BASE_URL}favicon.png` },
 ];
 
 const Images = () => (
