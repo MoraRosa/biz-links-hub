@@ -496,6 +496,29 @@
         "education"
       ],
       "createdAt": "2026-09-26"
+    },
+    {
+      "id": "ca-59",
+      "title": "Empire Flippers",
+      "url": "https://empireflippers.com",
+      "description": "Curated marketplace for buying and selling profitable online businesses — vetted listings with verified revenue, useful whether you're buying a starter site or planning an exit.",
+      "category": "other",
+      "tags": [
+        "finance",
+        "tools"
+      ],
+      "createdAt": "2026-09-27"
+    },
+    {
+      "id": "ca-60",
+      "title": "Fisher Leads",
+      "url": "https://fisherleads.com",
+      "description": "B2B lead generation service that builds targeted prospect lists and runs outreach campaigns to fill your sales pipeline.",
+      "category": "marketing",
+      "tags": [
+        "tools"
+      ],
+      "createdAt": "2026-09-27"
     }
   ]
 }
