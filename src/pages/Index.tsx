@@ -14,7 +14,7 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<LinkCategory | "all">("all");
-  const [view, setView] = useState<"grid" | "list" | "categories">("grid");
+  const [view, setView] = useState<"grid" | "list" | "categories">("categories");
   const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
