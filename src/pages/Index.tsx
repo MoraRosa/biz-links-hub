@@ -14,7 +14,7 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<LinkCategory | "all">("all");
-  const [view, setView] = useState<"grid" | "list" | "categories">("grid");
+  const [view, setView] = useState<"grid" | "list" | "categories">("categories");
   const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -153,15 +153,15 @@ const Index = () => {
                 type="button"
                 variant="ghost"
                 size="icon"
-                onClick={() => setView("grid")}
+                onClick={() => setView("categories")}
                 className={`h-9 w-9 rounded-none transition-colors ${
-                  view === "grid" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                  view === "categories" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
-                aria-label="Grid view"
-                aria-pressed={view === "grid"}
-                title="Grid view"
+                aria-label="Category view"
+                aria-pressed={view === "categories"}
+                title="Category view"
               >
-                <LayoutGrid className="w-4 h-4" />
+                <Rows3 className="w-4 h-4" />
               </Button>
               <Button
                 type="button"
@@ -181,17 +181,18 @@ const Index = () => {
                 type="button"
                 variant="ghost"
                 size="icon"
-                onClick={() => setView("categories")}
+                onClick={() => setView("grid")}
                 className={`h-9 w-9 rounded-none transition-colors ${
-                  view === "categories" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                  view === "grid" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
-                aria-label="Category view"
-                aria-pressed={view === "categories"}
-                title="Category view"
+                aria-label="Grid view"
+                aria-pressed={view === "grid"}
+                title="Grid view"
               >
-                <Rows3 className="w-4 h-4" />
+                <LayoutGrid className="w-4 h-4" />
               </Button>
             </div>
+
           </div>
         </div>
       </div>
