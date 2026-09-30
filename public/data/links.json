@@ -530,6 +530,18 @@
         "tools"
       ],
       "createdAt": "2026-09-27"
+    },
+    {
+      "id": "ca-62",
+      "title": "Paperclip",
+      "url": "https://paperclip.ing",
+      "description": "Manage a team of AI agents for work — orchestrate agents across dev, content, social, marketing, research, and outreach from one polished app.",
+      "category": "media",
+      "tags": [
+        "tools",
+        "marketing"
+      ],
+      "createdAt": "2026-09-30"
     }
   ]
 }
