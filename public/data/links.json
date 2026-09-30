@@ -48,7 +48,11 @@
       "title": "Canva",
       "url": "https://www.canva.com",
       "description": "Free graphic design tool for social media posts, flyers, logos, business cards, and more.",
-      "category": "tools",
+      "category": "design",
+      "tags": [
+        "tools",
+        "media"
+      ],
       "createdAt": "2024-01-19"
     },
     {
@@ -109,9 +113,9 @@
     },
     {
       "id": "ca-14",
-      "title": "Shopify (Free Trial)",
-      "url": "https://www.shopify.com",
-      "description": "Canadian-born e-commerce platform. Build your online store, sell anywhere.",
+      "title": "Peak Enterprise",
+      "url": "https://peakenterprise.ca",
+      "description": "Canadian-built storefront and operations platform for consumer-product brands — inventory, orders, and customer history in one place, with a free tier and no cut of your sales.",
       "category": "tools",
       "createdAt": "2024-01-27"
     },
@@ -352,7 +356,11 @@
       "title": "Unsplash",
       "url": "https://unsplash.com",
       "description": "Beautiful, free stock photos for your website, social media, and marketing materials.",
-      "category": "tools",
+      "category": "design",
+      "tags": [
+        "media",
+        "marketing"
+      ],
       "createdAt": "2024-02-28"
     },
     {

@@ -6,6 +6,8 @@ import catGovernment from "@/assets/cat-government.png";
 import catTools from "@/assets/cat-tools.png";
 import catEducation from "@/assets/cat-education.png";
 import catOther from "@/assets/cat-other.png";
+import catDesign from "@/assets/cat-design.png";
+import catMedia from "@/assets/cat-media.png";
 
 export type LinkCategory =
   | "marketing"
@@ -15,6 +17,8 @@ export type LinkCategory =
   | "government"
   | "tools"
   | "education"
+  | "design"
+  | "media"
   | "other";
 
 export interface LinkItem {
@@ -39,6 +43,8 @@ export const CATEGORY_META: Record<
   government: { label: "Government & Grants", emoji: "🏛️", image: catGovernment },
   tools: { label: "Tools & Software", emoji: "🛠️", image: catTools },
   education: { label: "Learning", emoji: "📚", image: catEducation },
+  design: { label: "Design & UI", emoji: "🎨", image: catDesign },
+  media: { label: "AI Media & Content", emoji: "✨", image: catMedia },
   other: { label: "Other", emoji: "📌", image: catOther },
 };
 
