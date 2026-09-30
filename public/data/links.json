@@ -407,12 +407,15 @@
       "createdAt": "2026-09-25"
     },
     {
-      "id": "ca-50",
-      "title": "Peak Enterprise",
-      "url": "https://peakenterprise.ca",
-      "description": "Canadian-built storefront and operations platform for consumer-product brands — inventory, orders, and customer history in one place, with a free tier and no cut of your sales.",
-      "category": "tools",
-      "createdAt": "2026-09-25"
+      "id": "ca-61",
+      "title": "Find an SEO Agency",
+      "url": "https://findanseoagency.com",
+      "description": "Free guides on hiring and working with SEO and AI-search (GEO) agencies — what they cost, what to ask before you sign, and how to tell if your current agency has adapted to AI search.",
+      "category": "education",
+      "tags": [
+        "marketing"
+      ],
+      "createdAt": "2026-09-30"
     },
     {
       "id": "ca-51",
